@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B015621A55CE0B829048271 /* Pods_AudioTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0082B7B02793624F9A27FA5D /* Pods_AudioTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6833B61C1BD18B8700754640 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833B61B1BD18B8700754640 /* AppDelegate.swift */; };
 		6833B61E1BD18B8700754640 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833B61D1BD18B8700754640 /* FirstViewController.swift */; };
 		6833B6201BD18B8700754640 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833B61F1BD18B8700754640 /* SecondViewController.swift */; };
 		6833B6231BD18B8700754640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6833B6211BD18B8700754640 /* Main.storyboard */; };
 		6833B6251BD18B8700754640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6833B6241BD18B8700754640 /* Assets.xcassets */; };
 		6833B6281BD18B8700754640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6833B6261BD18B8700754640 /* LaunchScreen.storyboard */; };
+		6833B6301BD18BFF00754640 /* RecordingControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833B62F1BD18BFF00754640 /* RecordingControlView.swift */; settings = {ASSET_TAGS = (); }; };
+		6833B6321BD18C0A00754640 /* RecordingControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6833B6311BD18C0A00754640 /* RecordingControlView.xib */; settings = {ASSET_TAGS = (); }; };
+		6833B6341BD18D8700754640 /* AVFoundationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833B6331BD18D8700754640 /* AVFoundationHelper.swift */; settings = {ASSET_TAGS = (); }; };
+		6833B6361BD197C500754640 /* simple-drum-beat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6833B6351BD197C500754640 /* simple-drum-beat.wav */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0082B7B02793624F9A27FA5D /* Pods_AudioTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6833B6181BD18B8600754640 /* AudioTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6833B61B1BD18B8700754640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6833B61D1BD18B8700754640 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,12 @@
 		6833B6241BD18B8700754640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6833B6271BD18B8700754640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6833B6291BD18B8700754640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6833B62F1BD18BFF00754640 /* RecordingControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingControlView.swift; sourceTree = "<group>"; };
+		6833B6311BD18C0A00754640 /* RecordingControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordingControlView.xib; sourceTree = "<group>"; };
+		6833B6331BD18D8700754640 /* AVFoundationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVFoundationHelper.swift; sourceTree = "<group>"; };
+		6833B6351BD197C500754640 /* simple-drum-beat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "simple-drum-beat.wav"; sourceTree = "<group>"; };
+		93F688014A0EAA462C9444EF /* Pods-AudioTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioTest/Pods-AudioTest.release.xcconfig"; sourceTree = "<group>"; };
+		AA8576664408BD7B6F999583 /* Pods-AudioTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioTest/Pods-AudioTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B015621A55CE0B829048271 /* Pods_AudioTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		577EEAC1993773942AA38FB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA8576664408BD7B6F999583 /* Pods-AudioTest.debug.xcconfig */,
+				93F688014A0EAA462C9444EF /* Pods-AudioTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6833B60F1BD18B8600754640 = {
 			isa = PBXGroup;
 			children = (
 				6833B61A1BD18B8600754640 /* AudioTest */,
 				6833B6191BD18B8600754640 /* Products */,
+				577EEAC1993773942AA38FB4 /* Pods */,
+				DF6826B3724E7936667F910B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +80,7 @@
 		6833B61A1BD18B8600754640 /* AudioTest */ = {
 			isa = PBXGroup;
 			children = (
+				6833B6351BD197C500754640 /* simple-drum-beat.wav */,
 				6833B61B1BD18B8700754640 /* AppDelegate.swift */,
 				6833B61D1BD18B8700754640 /* FirstViewController.swift */,
 				6833B61F1BD18B8700754640 /* SecondViewController.swift */,
@@ -63,8 +88,19 @@
 				6833B6241BD18B8700754640 /* Assets.xcassets */,
 				6833B6261BD18B8700754640 /* LaunchScreen.storyboard */,
 				6833B6291BD18B8700754640 /* Info.plist */,
+				6833B62F1BD18BFF00754640 /* RecordingControlView.swift */,
+				6833B6311BD18C0A00754640 /* RecordingControlView.xib */,
+				6833B6331BD18D8700754640 /* AVFoundationHelper.swift */,
 			);
 			path = AudioTest;
+			sourceTree = "<group>";
+		};
+		DF6826B3724E7936667F910B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0082B7B02793624F9A27FA5D /* Pods_AudioTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6833B62C1BD18B8700754640 /* Build configuration list for PBXNativeTarget "AudioTest" */;
 			buildPhases = (
+				87D5E331C6DA0A1B624A0001 /* Check Pods Manifest.lock */,
 				6833B6141BD18B8600754640 /* Sources */,
 				6833B6151BD18B8600754640 /* Frameworks */,
 				6833B6161BD18B8600754640 /* Resources */,
+				EC8EC8A188F18F628E34FB23 /* Embed Pods Frameworks */,
+				513208740995FF15F6156372 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,13 +163,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6833B6361BD197C500754640 /* simple-drum-beat.wav in Resources */,
 				6833B6281BD18B8700754640 /* LaunchScreen.storyboard in Resources */,
 				6833B6251BD18B8700754640 /* Assets.xcassets in Resources */,
+				6833B6321BD18C0A00754640 /* RecordingControlView.xib in Resources */,
 				6833B6231BD18B8700754640 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		513208740995FF15F6156372 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioTest/Pods-AudioTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87D5E331C6DA0A1B624A0001 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC8EC8A188F18F628E34FB23 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioTest/Pods-AudioTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6833B6141BD18B8600754640 /* Sources */ = {
@@ -139,6 +228,8 @@
 			files = (
 				6833B6201BD18B8700754640 /* SecondViewController.swift in Sources */,
 				6833B61C1BD18B8700754640 /* AppDelegate.swift in Sources */,
+				6833B6341BD18D8700754640 /* AVFoundationHelper.swift in Sources */,
+				6833B6301BD18BFF00754640 /* RecordingControlView.swift in Sources */,
 				6833B61E1BD18B8700754640 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +339,7 @@
 		};
 		6833B62D1BD18B8700754640 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA8576664408BD7B6F999583 /* Pods-AudioTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AudioTest/Info.plist;
@@ -259,6 +351,7 @@
 		};
 		6833B62E1BD18B8700754640 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F688014A0EAA462C9444EF /* Pods-AudioTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AudioTest/Info.plist;
@@ -287,6 +380,7 @@
 				6833B62E1BD18B8700754640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
