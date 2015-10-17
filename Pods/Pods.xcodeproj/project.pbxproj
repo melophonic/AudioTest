@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0787FE12135974DDE814231D08955E49 /* SCWaveformView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E8ECF072B2AAD399FC6F27E3FE216CE /* SCWaveformView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10824845E494A6CD2007F2118DFE2F9F /* SCWaveformCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1366F0C58FAF4A7ECB497BEE6E7BAF44 /* SCWaveformCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		124845433078E1B046E246612CFD4F04 /* SCWaveformCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A27DECDDE97A2F7FDCC2F7CB7243DA6A /* SCWaveformCache.m */; };
+		27BDAF383103BAA5425884E3AC319255 /* SCWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5805F729F76E69D1AC4F224E3B994A /* SCWaveformView.m */; };
+		28F7A75B5D7E145065A49E86F8D95704 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687F7EDC20AFE8EA607D75093BD8EE89 /* CoreGraphics.framework */; };
+		310FBCB3A460E0B82A7294963C2FE84C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45E69D21DDCE230C3DC0FFDC55CA0FB /* UIKit.framework */; };
+		7D8B559C8DFC5DB86EB035C9F4B9E983 /* SCScrollableWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF3C99BF82E763F996F2A8E90F9D3F0 /* SCScrollableWaveformView.m */; };
+		811761F8D4105654F6DBEF71873027C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338B06758F729534AD014C889AFE0FAF /* Foundation.framework */; };
+		8E106B5FC59CF81E1E3EB4D9262E6BB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338B06758F729534AD014C889AFE0FAF /* Foundation.framework */; };
+		9B7B04348DE15BF7A31E559DC27299A1 /* Waver-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8440900994FA9AC1F3AF8BF3A2F0198 /* Waver-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A76851EE1A26401757AC7A3FB170FFCD /* Waver.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC85621819069A02AFD003B8C2C556E /* Waver.m */; };
+		AB0220D490C91320CBD2D5310E91A7C1 /* Waver.h in Headers */ = {isa = PBXBuildFile; fileRef = FC54FB08FE3AB474B784A554D5D9CE7D /* Waver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA723CA590E4B39E0A27C00574F86279 /* Pods-AudioTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDEF4FE76DF280BB5F059D59647B69D /* Pods-AudioTest-dummy.m */; };
+		CA0C7E76ED3337D8BA5010789FF42D58 /* SCWaveformView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 230C8D4CF0229D8C7F15D5A9348BF10B /* SCWaveformView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBB8B1CB140CE818C0D84C805AFE0989 /* Waver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 776F37E6843C6B4DA3D3BC1F672B71A4 /* Waver-dummy.m */; };
+		D8FECF749A3F0F35DA89171CA4EFE420 /* Pods-AudioTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46829E05F0210E3EC8F53AA71986EF95 /* Pods-AudioTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1AB227337BB3A85C8267321D1C79A4F /* SCWaveformView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4CC6A8E464BFBAE3AD2A4FFD078CAD /* SCWaveformView-dummy.m */; };
+		E788C6A325B789C5F6B4FBF13F88AF98 /* SCScrollableWaveformView.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B85331F19B6F439681225A6B07DC52 /* SCScrollableWaveformView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0117D3841F554EE1430AF544F3B64A0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5725A2410FF794F1B972100A5B2AC146 /* QuartzCore.framework */; };
+		F026E4AD31152C1704DCD2DD169426C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338B06758F729534AD014C889AFE0FAF /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8D3D458966065586F452C8E86AAB1FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADECED61E00222204EC0416A24069C74;
+			remoteInfo = Waver;
+		};
+		F9BB5F5B5F2407325EFE8E89D4E68443 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33282BD0C41D46AAA3036ABA9DB12400;
+			remoteInfo = SCWaveformView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06F2CA499B4D3A85ECE8383ABD46DCEE /* Pods_AudioTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C4A0E94B210AC95B312BB8F4D24B160 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D2602A8BB29651C2CFE3A85C2A42A94 /* Pods-AudioTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AudioTest.modulemap"; sourceTree = "<group>"; };
+		1366F0C58FAF4A7ECB497BEE6E7BAF44 /* SCWaveformCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCWaveformCache.h; path = Sources/SCWaveformCache.h; sourceTree = "<group>"; };
+		1EBE16864E979FE73935A758EF942DF5 /* Pods-AudioTest-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioTest-resources.sh"; sourceTree = "<group>"; };
+		230C8D4CF0229D8C7F15D5A9348BF10B /* SCWaveformView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCWaveformView-umbrella.h"; sourceTree = "<group>"; };
+		2C5805F729F76E69D1AC4F224E3B994A /* SCWaveformView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCWaveformView.m; path = Sources/SCWaveformView.m; sourceTree = "<group>"; };
+		2C68064EAEE64A56CAE84CC4E6838ABD /* Pods-AudioTest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioTest-frameworks.sh"; sourceTree = "<group>"; };
+		338B06758F729534AD014C889AFE0FAF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3EF3C99BF82E763F996F2A8E90F9D3F0 /* SCScrollableWaveformView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCScrollableWaveformView.m; path = Sources/SCScrollableWaveformView.m; sourceTree = "<group>"; };
+		46829E05F0210E3EC8F53AA71986EF95 /* Pods-AudioTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AudioTest-umbrella.h"; sourceTree = "<group>"; };
+		5725A2410FF794F1B972100A5B2AC146 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		597F951C0C2A015E6B2FCDEBD2F69C6C /* Waver.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Waver.xcconfig; sourceTree = "<group>"; };
+		62B85331F19B6F439681225A6B07DC52 /* SCScrollableWaveformView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCScrollableWaveformView.h; path = Sources/SCScrollableWaveformView.h; sourceTree = "<group>"; };
+		687F7EDC20AFE8EA607D75093BD8EE89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		776F37E6843C6B4DA3D3BC1F672B71A4 /* Waver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Waver-dummy.m"; sourceTree = "<group>"; };
+		7E4CC6A8E464BFBAE3AD2A4FFD078CAD /* SCWaveformView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCWaveformView-dummy.m"; sourceTree = "<group>"; };
+		7E8ECF072B2AAD399FC6F27E3FE216CE /* SCWaveformView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCWaveformView.h; path = Sources/SCWaveformView.h; sourceTree = "<group>"; };
+		7F7BB912C05FBAA7E00601A5E6FBE03F /* Pods-AudioTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudioTest-acknowledgements.plist"; sourceTree = "<group>"; };
+		828FE7ED0DEEBD93C17941DB34B2FACE /* Waver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Waver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F3969B27D110B978B95C6EAEA4A257 /* SCWaveformView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SCWaveformView.modulemap; sourceTree = "<group>"; };
+		8D37DD7A1B49B274FF2E471CA1A9038C /* SCWaveformView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCWaveformView.xcconfig; sourceTree = "<group>"; };
+		A27DECDDE97A2F7FDCC2F7CB7243DA6A /* SCWaveformCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCWaveformCache.m; path = Sources/SCWaveformCache.m; sourceTree = "<group>"; };
+		AA1A0924C0F1B7C02595829D8ACB0590 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B34E2D3EFF7A88613E04B48E39C9853D /* Pods-AudioTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioTest.release.xcconfig"; sourceTree = "<group>"; };
+		B8440900994FA9AC1F3AF8BF3A2F0198 /* Waver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Waver-umbrella.h"; sourceTree = "<group>"; };
+		B9C4BA20774348D020992102EB39D2FC /* SCWaveformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCWaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D8218FA858A172BB249C24B86B7000 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C2C4454016171410479E0DF832680517 /* Pods-AudioTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioTest.debug.xcconfig"; sourceTree = "<group>"; };
+		CE311C3D766A6A1440C9B96A03632523 /* Waver.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Waver.modulemap; sourceTree = "<group>"; };
+		D45E69D21DDCE230C3DC0FFDC55CA0FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DC3A552E424D6415AC64D025EC377D1D /* Waver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Waver-prefix.pch"; sourceTree = "<group>"; };
+		DDC85621819069A02AFD003B8C2C556E /* Waver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Waver.m; path = Waver/Source/Waver.m; sourceTree = "<group>"; };
+		EEDEF4FE76DF280BB5F059D59647B69D /* Pods-AudioTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AudioTest-dummy.m"; sourceTree = "<group>"; };
+		EF8CACC22CCE24FBDE0B02BF5C7DC645 /* Pods-AudioTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AudioTest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F9E020F1F6C31B511B1B3C5DCCA8D93F /* SCWaveformView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCWaveformView-prefix.pch"; sourceTree = "<group>"; };
+		FC54FB08FE3AB474B784A554D5D9CE7D /* Waver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Waver.h; path = Waver/Source/Waver.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		120FEEDF4DA05A3B1F833DF8D1B485F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F7A75B5D7E145065A49E86F8D95704 /* CoreGraphics.framework in Frameworks */,
+				F026E4AD31152C1704DCD2DD169426C5 /* Foundation.framework in Frameworks */,
+				F0117D3841F554EE1430AF544F3B64A0 /* QuartzCore.framework in Frameworks */,
+				310FBCB3A460E0B82A7294963C2FE84C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4632E2C17499171C80C696B5D4E477 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				811761F8D4105654F6DBEF71873027C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D14906122FD6467A810A9185BDF63C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E106B5FC59CF81E1E3EB4D9262E6BB8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1023B7FDC1586B88262C29A602D68D6C /* SCWaveformView */ = {
+			isa = PBXGroup;
+			children = (
+				62B85331F19B6F439681225A6B07DC52 /* SCScrollableWaveformView.h */,
+				3EF3C99BF82E763F996F2A8E90F9D3F0 /* SCScrollableWaveformView.m */,
+				1366F0C58FAF4A7ECB497BEE6E7BAF44 /* SCWaveformCache.h */,
+				A27DECDDE97A2F7FDCC2F7CB7243DA6A /* SCWaveformCache.m */,
+				7E8ECF072B2AAD399FC6F27E3FE216CE /* SCWaveformView.h */,
+				2C5805F729F76E69D1AC4F224E3B994A /* SCWaveformView.m */,
+				4E9BBB30F5642AE8AA57AEB166C44985 /* Support Files */,
+			);
+			path = SCWaveformView;
+			sourceTree = "<group>";
+		};
+		11EC5645C90D67B823CEEA32360E2A86 /* Waver */ = {
+			isa = PBXGroup;
+			children = (
+				FC54FB08FE3AB474B784A554D5D9CE7D /* Waver.h */,
+				DDC85621819069A02AFD003B8C2C556E /* Waver.m */,
+				7CA8B1291CEF1BB93BA01FA6AB7E8F0B /* Support Files */,
+			);
+			path = Waver;
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CB6AAB047A1193DA81CD6676BE1EC87 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A993FEF7B9A574350D23437CB39E5AE /* Pods-AudioTest */ = {
+			isa = PBXGroup;
+			children = (
+				B9D8218FA858A172BB249C24B86B7000 /* Info.plist */,
+				0D2602A8BB29651C2CFE3A85C2A42A94 /* Pods-AudioTest.modulemap */,
+				EF8CACC22CCE24FBDE0B02BF5C7DC645 /* Pods-AudioTest-acknowledgements.markdown */,
+				7F7BB912C05FBAA7E00601A5E6FBE03F /* Pods-AudioTest-acknowledgements.plist */,
+				EEDEF4FE76DF280BB5F059D59647B69D /* Pods-AudioTest-dummy.m */,
+				2C68064EAEE64A56CAE84CC4E6838ABD /* Pods-AudioTest-frameworks.sh */,
+				1EBE16864E979FE73935A758EF942DF5 /* Pods-AudioTest-resources.sh */,
+				46829E05F0210E3EC8F53AA71986EF95 /* Pods-AudioTest-umbrella.h */,
+				C2C4454016171410479E0DF832680517 /* Pods-AudioTest.debug.xcconfig */,
+				B34E2D3EFF7A88613E04B48E39C9853D /* Pods-AudioTest.release.xcconfig */,
+			);
+			name = "Pods-AudioTest";
+			path = "Target Support Files/Pods-AudioTest";
+			sourceTree = "<group>";
+		};
+		4E9BBB30F5642AE8AA57AEB166C44985 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C4A0E94B210AC95B312BB8F4D24B160 /* Info.plist */,
+				85F3969B27D110B978B95C6EAEA4A257 /* SCWaveformView.modulemap */,
+				8D37DD7A1B49B274FF2E471CA1A9038C /* SCWaveformView.xcconfig */,
+				7E4CC6A8E464BFBAE3AD2A4FFD078CAD /* SCWaveformView-dummy.m */,
+				F9E020F1F6C31B511B1B3C5DCCA8D93F /* SCWaveformView-prefix.pch */,
+				230C8D4CF0229D8C7F15D5A9348BF10B /* SCWaveformView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SCWaveformView";
+			sourceTree = "<group>";
+		};
+		6CB6AAB047A1193DA81CD6676BE1EC87 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				687F7EDC20AFE8EA607D75093BD8EE89 /* CoreGraphics.framework */,
+				338B06758F729534AD014C889AFE0FAF /* Foundation.framework */,
+				5725A2410FF794F1B972100A5B2AC146 /* QuartzCore.framework */,
+				D45E69D21DDCE230C3DC0FFDC55CA0FB /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7CA8B1291CEF1BB93BA01FA6AB7E8F0B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA1A0924C0F1B7C02595829D8ACB0590 /* Info.plist */,
+				CE311C3D766A6A1440C9B96A03632523 /* Waver.modulemap */,
+				597F951C0C2A015E6B2FCDEBD2F69C6C /* Waver.xcconfig */,
+				776F37E6843C6B4DA3D3BC1F672B71A4 /* Waver-dummy.m */,
+				DC3A552E424D6415AC64D025EC377D1D /* Waver-prefix.pch */,
+				B8440900994FA9AC1F3AF8BF3A2F0198 /* Waver-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Waver";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				ED5987F40297853BDAAF8FEDC8F170E5 /* Pods */,
+				87F56A37DBF51DFDE3D4DB0B7C080E9F /* Products */,
+				F47A9E66ED655C567FCE97E2ACAAF031 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		87F56A37DBF51DFDE3D4DB0B7C080E9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06F2CA499B4D3A85ECE8383ABD46DCEE /* Pods_AudioTest.framework */,
+				B9C4BA20774348D020992102EB39D2FC /* SCWaveformView.framework */,
+				828FE7ED0DEEBD93C17941DB34B2FACE /* Waver.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED5987F40297853BDAAF8FEDC8F170E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1023B7FDC1586B88262C29A602D68D6C /* SCWaveformView */,
+				11EC5645C90D67B823CEEA32360E2A86 /* Waver */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F47A9E66ED655C567FCE97E2ACAAF031 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A993FEF7B9A574350D23437CB39E5AE /* Pods-AudioTest */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		40CE00EA13BAE6D8AECD147F90ADB92D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7B04348DE15BF7A31E559DC27299A1 /* Waver-umbrella.h in Headers */,
+				AB0220D490C91320CBD2D5310E91A7C1 /* Waver.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9040D60FB5A7D189CFDDDCD95541A283 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8FECF749A3F0F35DA89171CA4EFE420 /* Pods-AudioTest-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA5883CEE8C18D661E45A4AD2E473759 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E788C6A325B789C5F6B4FBF13F88AF98 /* SCScrollableWaveformView.h in Headers */,
+				10824845E494A6CD2007F2118DFE2F9F /* SCWaveformCache.h in Headers */,
+				CA0C7E76ED3337D8BA5010789FF42D58 /* SCWaveformView-umbrella.h in Headers */,
+				0787FE12135974DDE814231D08955E49 /* SCWaveformView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		33282BD0C41D46AAA3036ABA9DB12400 /* SCWaveformView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED23EF3A662647DE803A0537D854997D /* Build configuration list for PBXNativeTarget "SCWaveformView" */;
+			buildPhases = (
+				A088241B88C19B9DFFCD1E89D6AF97D4 /* Sources */,
+				61D14906122FD6467A810A9185BDF63C /* Frameworks */,
+				DA5883CEE8C18D661E45A4AD2E473759 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCWaveformView;
+			productName = SCWaveformView;
+			productReference = B9C4BA20774348D020992102EB39D2FC /* SCWaveformView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3E05BBED728249A03E0FA593F0AC7F12 /* Pods-AudioTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB24C4691C3CAEE5D0C7D1D86F9241E1 /* Build configuration list for PBXNativeTarget "Pods-AudioTest" */;
+			buildPhases = (
+				817738FE32A815771C656C323491F238 /* Sources */,
+				2C4632E2C17499171C80C696B5D4E477 /* Frameworks */,
+				9040D60FB5A7D189CFDDDCD95541A283 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF0164913C026224BBB0EFBF09831DF4 /* PBXTargetDependency */,
+				ED353DBE9FC56AC4EA43BFC29377F42C /* PBXTargetDependency */,
+			);
+			name = "Pods-AudioTest";
+			productName = "Pods-AudioTest";
+			productReference = 06F2CA499B4D3A85ECE8383ABD46DCEE /* Pods_AudioTest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ADECED61E00222204EC0416A24069C74 /* Waver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9070E77E0B33DF381A19B3B4CFF9FD66 /* Build configuration list for PBXNativeTarget "Waver" */;
+			buildPhases = (
+				E0553EBFF1909B490897C69863720A1A /* Sources */,
+				120FEEDF4DA05A3B1F833DF8D1B485F3 /* Frameworks */,
+				40CE00EA13BAE6D8AECD147F90ADB92D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Waver;
+			productName = Waver;
+			productReference = 828FE7ED0DEEBD93C17941DB34B2FACE /* Waver.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 87F56A37DBF51DFDE3D4DB0B7C080E9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E05BBED728249A03E0FA593F0AC7F12 /* Pods-AudioTest */,
+				33282BD0C41D46AAA3036ABA9DB12400 /* SCWaveformView */,
+				ADECED61E00222204EC0416A24069C74 /* Waver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		817738FE32A815771C656C323491F238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA723CA590E4B39E0A27C00574F86279 /* Pods-AudioTest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A088241B88C19B9DFFCD1E89D6AF97D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8B559C8DFC5DB86EB035C9F4B9E983 /* SCScrollableWaveformView.m in Sources */,
+				124845433078E1B046E246612CFD4F04 /* SCWaveformCache.m in Sources */,
+				E1AB227337BB3A85C8267321D1C79A4F /* SCWaveformView-dummy.m in Sources */,
+				27BDAF383103BAA5425884E3AC319255 /* SCWaveformView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0553EBFF1909B490897C69863720A1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB8B1CB140CE818C0D84C805AFE0989 /* Waver-dummy.m in Sources */,
+				A76851EE1A26401757AC7A3FB170FFCD /* Waver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF0164913C026224BBB0EFBF09831DF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SCWaveformView;
+			target = 33282BD0C41D46AAA3036ABA9DB12400 /* SCWaveformView */;
+			targetProxy = F9BB5F5B5F2407325EFE8E89D4E68443 /* PBXContainerItemProxy */;
+		};
+		ED353DBE9FC56AC4EA43BFC29377F42C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Waver;
+			target = ADECED61E00222204EC0416A24069C74 /* Waver */;
+			targetProxy = F8D3D458966065586F452C8E86AAB1FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		32756E38AF09CB9FCF2186B87BD562DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B34E2D3EFF7A88613E04B48E39C9853D /* Pods-AudioTest.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AudioTest/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AudioTest/Pods-AudioTest.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AudioTest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		756A5E1BF780C917D90C8A55231A13B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D37DD7A1B49B274FF2E471CA1A9038C /* SCWaveformView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.0.6;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCWaveformView/SCWaveformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCWaveformView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCWaveformView/SCWaveformView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SCWaveformView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C470003B47CD89393A0019B8F400377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C4454016171410479E0DF832680517 /* Pods-AudioTest.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AudioTest/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-AudioTest/Pods-AudioTest.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AudioTest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF5359A6824DCECA7ADB2C5E4C3DF4BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D37DD7A1B49B274FF2E471CA1A9038C /* SCWaveformView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.0.6;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCWaveformView/SCWaveformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCWaveformView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCWaveformView/SCWaveformView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SCWaveformView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E527A2674CFCA27A0033A134FF966BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 597F951C0C2A015E6B2FCDEBD2F69C6C /* Waver.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.3.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.3.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Waver/Waver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Waver/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Waver/Waver.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Waver;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EFC146FE0BFFBD293F89747E70197352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 597F951C0C2A015E6B2FCDEBD2F69C6C /* Waver.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.3.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.3.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Waver/Waver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Waver/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Waver/Waver.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Waver;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
+				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9070E77E0B33DF381A19B3B4CFF9FD66 /* Build configuration list for PBXNativeTarget "Waver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC146FE0BFFBD293F89747E70197352 /* Debug */,
+				E527A2674CFCA27A0033A134FF966BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB24C4691C3CAEE5D0C7D1D86F9241E1 /* Build configuration list for PBXNativeTarget "Pods-AudioTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C470003B47CD89393A0019B8F400377 /* Debug */,
+				32756E38AF09CB9FCF2186B87BD562DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED23EF3A662647DE803A0537D854997D /* Build configuration list for PBXNativeTarget "SCWaveformView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				756A5E1BF780C917D90C8A55231A13B0 /* Debug */,
+				BF5359A6824DCECA7ADB2C5E4C3DF4BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

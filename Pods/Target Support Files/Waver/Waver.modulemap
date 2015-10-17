@@ -1,0 +1,6 @@
+framework module Waver {
+  umbrella header "Waver-umbrella.h"
+
+  export *
+  module * { export * }
+}
